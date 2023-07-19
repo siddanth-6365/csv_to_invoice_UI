@@ -12,7 +12,7 @@ const DisplayOrder = () => {
   useEffect(() => {
     const fetchOrderTotals = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/orders");
+        const response = await axios.get("https://csvtoinvoiceapi-production.up.railway.app/orders");
         const data = response.data;
         setOrderTotals(data.data);
         setIsLoading(false);

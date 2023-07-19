@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../App.css";
-import { InvoicePage } from "./InvoicePage";
 import {Navigate} from "react-router-dom"
 
 export const TableRow = ({ data }) => {

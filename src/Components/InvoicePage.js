@@ -21,7 +21,7 @@ export const InvoicePage = () => {
   useEffect(() => {
     const fetchOrderTotals = async () => {
       try {
-        const path = `http://localhost:3000/invoice/${id}`;
+        const path = `https://csvtoinvoiceapi-production.up.railway.app/invoice/${id}`;
         console.log("paht :", path);
         const response = await fetch(path);
         const data = await response.json();
