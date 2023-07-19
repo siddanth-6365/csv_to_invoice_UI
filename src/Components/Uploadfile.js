@@ -23,7 +23,7 @@ deletedb();
     const data = new FormData();
     data.append("file", files[0]);
     try {
-      await axios.post("https://csvtoinvoiceapi-production.up.railway.app/upload", data, {
+      await axios.post("https://odd-blue-hermit-crab-sock.cyclic.app/upload", data, {
         headers: { "Content-type": "multipart/form-data" },
       });
       setDisplay(true);
@@ -39,7 +39,7 @@ deletedb();
   }
 
   function deletedb() {
-    axios.post("https://csvtoinvoiceapi-production.up.railway.app/deletedb");
+    axios.post("https://odd-blue-hermit-crab-sock.cyclic.app/deletedb");
     // alert("previos data deleted successfully now you can upload new file")
   }
 
